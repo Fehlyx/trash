@@ -1,18 +1,18 @@
 
 # Diese Funktion rechnet Fahrenheit zu Celsius um.
+print("Bitte gib die zum umrechnen gewünschte Temperatur in Fahrenheit als float oder integer an.")
+f_temp = int(input())
 def f_to_c(f_temp):
     c_temp = (f_temp -32) * 5/9
+    return int(c_temp)
     #print gibt die von Fahrenheit zu Celsius umgerechnete Temperatur in Celsius an.
-    print(c_temp)
+print("...° Fahrenheit ist ", f_to_c(f_temp), "° Celsius.")
 
-# Diese Variable speichert 100° Fahrenheit als Parameter in der Funktion f_to_c.
-f100_in_celsius = f_to_c(100)
-
+print("Bitte gib die zum umrechnen gewünschte Temperatur in Celsius als float oder integer an.")
+c_temp = int(input())
 # Diese Funktion rechnet Celsius zu Fahrenheit um.
 def c_to_f(c_temp):
     f_temp = c_temp * (9/5) + 32
+    return int(f_temp)
     #print gibt die von Celsius zu Fahrenheit umgerechnete Temperatur in Fahrenheit an.
-    print(f_temp)
-
-# Diese Variable speichert 0° Celsius als Parameter in der Funktion c_to_f.
-c0_in_fahrenheit = c_to_f(0)
+print("...° Celsius ist", c_to_f(c_temp), "° Fahrenheit.")
